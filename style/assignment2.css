@@ -1,9 +1,7 @@
-
-
 @font-face {
     font-family: 'Neto Sharif';
     src: url('assets/fonts/NetoSharif-Regular.woff2') format('woff2'),
-         url('assets/fonts/NetoSharif-Regular.woff') format('woff');
+        url('assets/fonts/NetoSharif-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -13,7 +11,7 @@
 @font-face {
     font-family: 'Neto Sharif';
     src: url('assets/fonts/NetoSharif-Bold.woff2') format('woff2'),
-         url('assets/fonts/NetoSharif-Bold.woff') format('woff');
+        url('assets/fonts/NetoSharif-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -21,8 +19,10 @@
 
 
 /* Universal Styles */
-html, body {
-    overflow-x: hidden !important; 
+html,
+body {
+    overflow-x: hidden !important;
+    /* Prevents horizontal scroll from badge overflow */
     overflow-y: visible !important;
 }
 
@@ -163,7 +163,26 @@ body {
     border-radius: 8px;
 }
 
-ion {
+
+/* Plants Section */
+.plants-section {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #fff;
+    margin-bottom: 80px;
+}
+
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.section-description {
     font-size: 18px;
     line-height: 1.6;
     color: #666;
@@ -339,7 +358,6 @@ ion {
 }
 
 
-
 /* Latest Deals Section */
 .deals-section {
     text-align: center;
@@ -417,7 +435,7 @@ ion {
     align-items: center;
 
 
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 
@@ -651,10 +669,21 @@ ion {
 }
 
 
-.main-footer .social-icons a[href*="linkedin.com"] { background-color: #0077B5; }
-.main-footer .social-icons a[href*="twitter.com"] { background-color: #1DA1F2; }
-.main-footer .social-icons a[href*="facebook.com"] { background-color: #1877F2; }
-.main-footer .social-icons a[href*="googleusercontent.com/youtube.com"] { background-color: #FF0000; }
+.main-footer .social-icons a[href*="linkedin.com"] {
+    background-color: #0077B5;
+}
+
+.main-footer .social-icons a[href*="twitter.com"] {
+    background-color: #1DA1F2;
+}
+
+.main-footer .social-icons a[href*="facebook.com"] {
+    background-color: #1877F2;
+}
+
+.main-footer .social-icons a[href*="googleusercontent.com/youtube.com"] {
+    background-color: #FF0000;
+}
 
 
 .main-footer .social-icons a:hover {
@@ -669,6 +698,7 @@ ion {
     .main-container {
         padding: 0 30px;
     }
+
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -676,11 +706,13 @@ ion {
 
     /* Flower Lover Section responsive adjustments */
     .new-top-section {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
+        /* Stack items vertically */
         text-align: center;
         gap: 50px;
         padding: 40px;
     }
+
     .badge-outer-wrapper {
         flex: none;
         width: 100%;
@@ -688,37 +720,45 @@ ion {
         margin: 0 auto;
         height: auto;
     }
+
     .image-block-wrapper {
         width: 100%;
         height: 350px;
     }
+
     .trusted-badge {
         width: 100px;
         top: 0;
         right: 0;
         transform: translate(50%, -50%);
     }
+
     .content-container {
         max-width: 100%;
     }
+
     .content-container h1 {
         font-size: 48px;
     }
+
     .content-container ul {
         text-align: left;
         padding-left: 20px;
     }
+
     .deals-grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         max-width: 500px;
     }
+
     .deal-card.large-card {
         grid-column: auto;
         grid-row: auto;
         height: auto;
         min-height: 300px;
     }
+
     .deal-card.small-card {
         height: auto;
         min-height: 250px;
@@ -729,6 +769,7 @@ ion {
     .newsletter-section {
         padding: 80px 20px;
     }
+
     .newsletter-content h2 {
         font-size: 40px;
     }
@@ -741,6 +782,7 @@ ion {
         text-align: center;
         padding: 30px 20px;
     }
+
     .main-footer .footer-left,
     .main-footer .footer-center,
     .main-footer .footer-right {
@@ -748,17 +790,21 @@ ion {
         width: 100%;
         margin-bottom: 20px;
     }
+
     .main-footer .footer-left .logo {
         justify-content: center;
     }
+
     .main-footer .footer-center {
         gap: 30px;
         flex-direction: column;
     }
+
     .main-footer .footer-right {
         justify-content: center;
         text-align: center;
     }
+
     .main-footer .social-icons {
         justify-content: center;
     }
@@ -766,11 +812,13 @@ ion {
 
 
 @media (max-width: 768px) {
+
     .header,
     .main-container {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     /* HIDE Home, Shop, About Us links */
     .nav-menu ul li:nth-child(1),
     .nav-menu ul li:nth-child(2),
@@ -805,18 +853,23 @@ ion {
         flex-direction: column;
         text-align: center;
     }
+
     .hero-image {
         order: 1;
         margin-bottom: 20px;
     }
+
     .hero-content {
         order: 2;
         text-align: center;
     }
+
     .hero-content h1 {
         font-size: 40px;
     }
-    .hero-content p, .section-description {
+
+    .hero-content p,
+    .section-description {
         font-size: 16px;
     }
 
@@ -828,34 +881,43 @@ ion {
 
 
     .new-top-section {
-        flex-direction: row; /* Image left, text right on 768px+ mobile breakpoint */
+        flex-direction: row;
+        /* Image left, text right on 768px+ mobile breakpoint */
         padding: 30px;
         gap: 30px;
     }
+
     .content-container h1 {
         font-size: 40px;
     }
+
     .content-container ul li {
         font-size: 16px;
     }
+
     .section-title {
         font-size: 40px;
     }
+
     .section-description {
         font-size: 16px;
     }
+
     .badge-outer-wrapper {
         max-width: 100%;
         width: 250px;
         height: 200px;
         flex-shrink: 0;
     }
+
     .image-block-wrapper {
         width: 100%;
         height: 100%;
     }
+
     .trusted-badge {
-        display: none !important; /* HIDE BADGE ON MOBILE DEVICES */
+        display: none !important;
+        /* HIDE BADGE ON MOBILE DEVICES */
     }
 
 
@@ -863,20 +925,24 @@ ion {
     .newsletter-content h2 {
         font-size: 32px;
     }
+
     .newsletter-form {
         flex-direction: row;
         gap: 0;
         max-width: 450px;
     }
+
     .newsletter-form input[type="email"],
     .newsletter-form button[type="submit"] {
         font-size: 16px;
         padding: 15px 20px;
         width: auto;
     }
+
     .newsletter-form input[type="email"] {
         border-radius: 5px 0 0 5px;
     }
+
     .newsletter-form button[type="submit"] {
         border-radius: 0 5px 5px 0;
     }
@@ -886,25 +952,31 @@ ion {
     .main-footer {
         text-align: left;
     }
+
     .main-footer .footer-left {
         text-align: left;
     }
+
     .main-footer .footer-left .logo {
         justify-content: flex-start;
     }
+
     .main-footer .footer-center {
         align-items: flex-start;
         justify-content: flex-start;
         gap: 20px;
         width: 100%;
     }
+
     .main-footer .footer-nav-column {
         align-items: flex-start;
         text-align: left;
     }
+
     .main-footer .footer-right {
         text-align: left;
     }
+
     .main-footer .social-icons {
         justify-content: flex-start;
     }
@@ -912,40 +984,52 @@ ion {
 
 
 @media (max-width: 480px) {
+
     .header,
     .main-container {
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .logo {
         font-size: 20px;
     }
+
     .nav-menu ul li a {
         font-size: 14px;
     }
+
     .hero-content h1 {
         font-size: 32px;
     }
+
     .hero-content p {
         font-size: 15px;
     }
+
     .product-grid {
         grid-template-columns: repeat(2, 1fr) !important;
     }
+
     .new-top-section {
-        flex-direction: column; /* Stack again on 480px and below */
+        flex-direction: column;
+        /* Stack again on 480px and below */
         padding: 20px;
     }
+
     .badge-outer-wrapper {
         width: 100%;
         max-width: none;
         height: 200px;
     }
+
     .image-block-wrapper {
         height: 100%;
     }
+
     .trusted-badge {
-        display: none !important; /* HIDE BADGE ON MOBILE DEVICES */
+        display: none !important;
+        /* HIDE BADGE ON MOBILE DEVICES */
     }
 
 
@@ -953,14 +1037,15 @@ ion {
     .newsletter-content h2 {
         font-size: 28px;
     }
+
     .newsletter-form {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .newsletter-form input[type="email"],
     .newsletter-form button[type="submit"] {
         padding: 10px 15px;
         font-size: 14px;
     }
 }
-

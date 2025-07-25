@@ -1,0 +1,166 @@
+
+
+@font-face {
+    font-family: 'Neto Sharif';
+    src: url('assets/fonts/NetoSharif-Regular.woff2') format('woff2'),
+         url('assets/fonts/NetoSharif-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Neto Sharif';
+    src: url('assets/fonts/NetoSharif-Bold.woff2') format('woff2'),
+         url('assets/fonts/NetoSharif-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Universal Styles */
+html, body {
+    overflow-x: hidden !important; /* Prevents horizontal scroll from badge overflow */
+    overflow-y: visible !important;
+}
+
+
+body {
+    font-family: 'Neto Sharif', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    border-top: 5px solid #ff8c00;
+}
+
+
+.highlight {
+    color: #ff8c00;
+}
+
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff8c00;
+}
+
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+
+.nav-menu ul li a.active,
+.nav-menu ul li a strong {
+    font-weight: 700;
+}
+
+
+.nav-menu ul li a:hover {
+    color: #ff8c00;
+}
+
+
+.nav-menu ul li a .fas {
+    margin-right: 5px;
+}
+
+
+/* Main Container */
+.main-container {
+    padding: 0 50px;
+    overflow: visible !important;
+}
+
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 0 80px 0;
+    background-color: #f9f9f9;
+    gap: 50px;
+    margin-bottom: 80px;
+    min-height: 500px;
+}
+
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+    padding-right: 0;
+    text-align: left;
+}
+
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0;
+}
+
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
